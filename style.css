@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: #163A70;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 72px;
+    margin-bottom: 5px;
+}
+
+.created-by {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+/* Dropdown */
+select {
+    display: block;
+    width: 600px;
+    max-width: 90%;
+    margin: 80px auto 20px auto;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Troubleshooting */
+#troubleshooting {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#troubleshooting h2 {
+    font-size: 28px;
+}
+
+#stepsList {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    list-style-position: inside;
+}
+
+#stepsList li {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+/* Hide initially */
+.hidden {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    select {
+        width: 90%;
+    }
+}
