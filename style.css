@@ -1,52 +1,40 @@
-/* ============================= */
-/* MAIN PAGE BACKGROUND */
-/* ============================= */
+/* ==============================
+   PAGE BACKGROUND
+============================== */
 
 html,
-body,
-[data-testid="stAppViewContainer"] {
-    background-color: #163A70 !important;
-    color: white !important;
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
 
-[data-testid="stHeader"] {
-    background-color: #163A70 !important;
-}
-
-[data-testid="stMain"] {
-    background-color: #163A70 !important;
-}
-
-
-/* ============================= */
-/* MAIN CONTENT */
-/* ============================= */
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+body {
+    background-color: #163A70;
+    color: white;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
 
-/* ============================= */
-/* HEADER */
-/* ============================= */
+/* ==============================
+   HEADER
+============================== */
 
 header {
     text-align: center;
+    padding: 20px 20px 0 20px;
 }
 
 h1 {
     font-size: 72px;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
     color: white;
 }
 
 .created-by {
     font-size: 12px;
-    margin-top: 0;
+    margin: 0;
     color: white;
 }
 
@@ -58,100 +46,141 @@ h1 {
 }
 
 
-/* ============================= */
-/* DROPDOWN */
-/* ============================= */
+/* ==============================
+   MAIN
+============================== */
 
-select {
-    display: block;
-    width: 600px;
-    max-width: 90%;
-    margin: 80px auto 20px auto;
-    padding: 14px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 30px 20px;
+    text-align: center;
 }
 
 
-/* ============================= */
-/* WHITE TROUBLESHOOTING PAPER */
-/* ============================= */
+/* ==============================
+   DROPDOWN
+============================== */
+
+select {
+    display: block;
+
+    width: 600px;
+    max-width: 90%;
+
+    margin: 80px auto 20px auto;
+
+    padding: 14px;
+
+    font-size: 16px;
+
+    border-radius: 8px;
+    border: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   WHITE TROUBLESHOOTING PAPER
+============================== */
 
 #troubleshooting {
-    background-color: white !important;
-    color: #163A70 !important;
+    background-color: white;
 
-    width: fit-content;
+    color: #163A70;
+
+    /* IMPORTANT */
+    display: inline-block;
+
+    /* Do NOT use width: 100% */
+    width: auto;
+
+    /* Prevent it from becoming too wide */
     max-width: 900px;
 
-    margin: 25px auto;
+    /* Only required height */
+    height: auto;
+    min-height: 0;
 
+    /* Center the white box */
+    margin: 25px auto 0 auto;
+
+    /* Space inside the paper */
     padding: 20px 30px;
 
     border-radius: 10px;
 
     text-align: left;
 
+    box-sizing: border-box;
+
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 
-/* ============================= */
-/* TROUBLESHOOTING TITLE */
-/* ============================= */
+/* ==============================
+   TROUBLESHOOTING TITLE
+============================== */
 
 #troubleshooting h2 {
     font-size: 28px;
+
     margin: 0 0 15px 0;
+
+    padding: 0;
+
     text-align: center;
+
     color: #163A70;
 }
 
 
-/* ============================= */
-/* TROUBLESHOOTING STEPS */
-/* ============================= */
+/* ==============================
+   TROUBLESHOOTING STEPS
+============================== */
 
 #stepsList {
-    display: block;
-    text-align: left;
-    padding-left: 25px;
     margin: 0;
+
+    padding: 0 0 0 28px;
+
+    color: #163A70;
 }
 
 #stepsList li {
     font-size: 18px;
-    margin: 8px 0;
+
     line-height: 1.4;
+
+    margin: 6px 0;
+
+    padding: 0;
+
     color: #163A70;
 }
 
 
-/* ============================= */
-/* HIDE INITIALLY */
-/* ============================= */
+/* ==============================
+   HIDDEN
+============================== */
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 
-/* ============================= */
-/* STREAMLIT ELEMENTS */
-/* ============================= */
-
-.stApp {
-    background-color: #163A70 !important;
-}
-
-
-/* ============================= */
-/* MOBILE */
-/* ============================= */
+/* ==============================
+   MOBILE
+============================== */
 
 @media (max-width: 600px) {
+
+    header {
+        padding: 15px 15px 0 15px;
+    }
 
     h1 {
         font-size: 40px;
@@ -159,6 +188,7 @@ select {
 
     .subtitle {
         font-size: 18px;
+        margin: 20px 0;
     }
 
     select {
@@ -167,17 +197,29 @@ select {
     }
 
     #troubleshooting {
+        display: block;
+
         width: auto;
-        max-width: 85%;
-        padding: 18px 20px;
-        margin: 20px auto;
+
+        max-width: 90%;
+
+        margin: 20px auto 0 auto;
+
+        padding: 15px 18px;
     }
 
     #troubleshooting h2 {
         font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    #stepsList {
+        padding-left: 22px;
     }
 
     #stepsList li {
         font-size: 16px;
+        line-height: 1.35;
+        margin: 5px 0;
     }
 }
