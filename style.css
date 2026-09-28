@@ -1,10 +1,26 @@
-body {
-    margin: 0;
-    background-color: #163A70;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
+/* ============================= */
+/* MAIN PAGE BACKGROUND */
+/* ============================= */
+
+html,
+body,
+[data-testid="stAppViewContainer"] {
+    background-color: #163A70 !important;
+    color: white !important;
 }
+
+[data-testid="stHeader"] {
+    background-color: #163A70 !important;
+}
+
+[data-testid="stMain"] {
+    background-color: #163A70 !important;
+}
+
+
+/* ============================= */
+/* MAIN CONTENT */
+/* ============================= */
 
 main {
     max-width: 1200px;
@@ -13,6 +29,11 @@ main {
     text-align: center;
 }
 
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
 header {
     text-align: center;
 }
@@ -20,20 +41,27 @@ header {
 h1 {
     font-size: 72px;
     margin-bottom: 5px;
+    color: white;
 }
 
 .created-by {
     font-size: 12px;
     margin-top: 0;
+    color: white;
 }
 
 .subtitle {
     font-size: 22px;
     font-weight: bold;
     margin: 30px 0;
+    color: white;
 }
 
-/* Dropdown */
+
+/* ============================= */
+/* DROPDOWN */
+/* ============================= */
+
 select {
     display: block;
     width: 600px;
@@ -46,42 +74,83 @@ select {
     cursor: pointer;
 }
 
-/* White troubleshooting paper */
+
+/* ============================= */
+/* WHITE TROUBLESHOOTING PAPER */
+/* ============================= */
+
 #troubleshooting {
-    background-color: white;
-    color: #163A70;
+    background-color: white !important;
+    color: #163A70 !important;
+
+    width: fit-content;
     max-width: 900px;
-    margin: 40px auto;
-    padding: 30px 40px;
+
+    margin: 25px auto;
+
+    padding: 20px 30px;
+
     border-radius: 10px;
-    text-align: center;
+
+    text-align: left;
+
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
+
+/* ============================= */
+/* TROUBLESHOOTING TITLE */
+/* ============================= */
+
 #troubleshooting h2 {
     font-size: 28px;
-    margin-bottom: 25px;
+    margin: 0 0 15px 0;
+    text-align: center;
+    color: #163A70;
 }
 
+
+/* ============================= */
+/* TROUBLESHOOTING STEPS */
+/* ============================= */
+
 #stepsList {
-    display: inline-block;
+    display: block;
     text-align: left;
-    padding-left: 30px;
+    padding-left: 25px;
     margin: 0;
 }
 
 #stepsList li {
     font-size: 18px;
-    margin: 14px 0;
-    line-height: 1.5;
+    margin: 8px 0;
+    line-height: 1.4;
+    color: #163A70;
 }
 
-/* Hide initially */
+
+/* ============================= */
+/* HIDE INITIALLY */
+/* ============================= */
+
 .hidden {
     display: none;
 }
 
-/* Mobile */
+
+/* ============================= */
+/* STREAMLIT ELEMENTS */
+/* ============================= */
+
+.stApp {
+    background-color: #163A70 !important;
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
 @media (max-width: 600px) {
 
     h1 {
@@ -98,8 +167,10 @@ select {
     }
 
     #troubleshooting {
-        width: 85%;
-        padding: 25px 20px;
+        width: auto;
+        max-width: 85%;
+        padding: 18px 20px;
+        margin: 20px auto;
     }
 
     #troubleshooting h2 {
