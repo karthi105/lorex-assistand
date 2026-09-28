@@ -50,47 +50,33 @@ select {
 #troubleshooting {
     background-color: white;
     color: #163A70;
-
-    /* Box fits the content */
-    width: fit-content;
     max-width: 900px;
-
-    /* Center the box */
-    margin: 25px auto;
-
-    /* Small amount of space around content */
-    padding: 20px 30px;
-
+    margin: 40px auto;
+    padding: 30px 40px;
     border-radius: 10px;
-
-    text-align: left;
-
+    text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* Troubleshooting title */
 #troubleshooting h2 {
     font-size: 28px;
-    margin: 0 0 15px 0;
-    text-align: center;
+    margin-bottom: 25px;
 }
 
-/* Steps */
 #stepsList {
-    display: block;
+    display: inline-block;
     text-align: left;
-    padding-left: 25px;
+    padding-left: 30px;
     margin: 0;
 }
 
-/* Individual steps */
 #stepsList li {
     font-size: 18px;
-    margin: 8px 0;
-    line-height: 1.4;
+    margin: 14px 0;
+    line-height: 1.5;
 }
 
-/* Hide troubleshooting section initially */
+/* Hide initially */
 .hidden {
     display: none;
 }
@@ -112,10 +98,8 @@ select {
     }
 
     #troubleshooting {
-        width: auto;
-        max-width: 85%;
-        padding: 18px 20px;
-        margin: 20px auto;
+        width: 85%;
+        padding: 25px 20px;
     }
 
     #troubleshooting h2 {
