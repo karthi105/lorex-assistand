@@ -1,3 +1,4 @@
+```css
 body {
     margin: 0;
     background-color: #163A70;
@@ -50,30 +51,42 @@ select {
 #troubleshooting {
     background-color: white;
     color: #163A70;
+
+    /* Makes the white box fit the content */
+    width: fit-content;
     max-width: 900px;
-    margin: 40px auto;
-    padding: 30px 40px;
+
+    /* Center the box */
+    margin: 25px auto;
+
+    /* Reduced empty space */
+    padding: 20px 30px;
+
     border-radius: 10px;
-    text-align: center;
+
+    /* Keep text aligned properly */
+    text-align: left;
+
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 #troubleshooting h2 {
     font-size: 28px;
-    margin-bottom: 25px;
+    margin: 0 0 15px 0;
+    text-align: center;
 }
 
 #stepsList {
-    display: inline-block;
+    display: block;
     text-align: left;
-    padding-left: 30px;
+    padding-left: 25px;
     margin: 0;
 }
 
 #stepsList li {
     font-size: 18px;
-    margin: 14px 0;
-    line-height: 1.5;
+    margin: 8px 0;
+    line-height: 1.4;
 }
 
 /* Hide initially */
@@ -98,8 +111,10 @@ select {
     }
 
     #troubleshooting {
-        width: 85%;
-        padding: 25px 20px;
+        width: auto;
+        max-width: 85%;
+        padding: 18px 20px;
+        margin: 20px auto;
     }
 
     #troubleshooting h2 {
@@ -110,3 +125,5 @@ select {
         font-size: 16px;
     }
 }
+```
+
